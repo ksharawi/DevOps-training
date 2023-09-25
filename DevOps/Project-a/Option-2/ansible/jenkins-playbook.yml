@@ -1,0 +1,8 @@
+---
+- name: Install Jenkins
+  hosts: jenkins-server
+  gather_facts: false
+  become: true
+  tasks:
+  - import_role:
+      name: install-jenkins
